@@ -1,6 +1,20 @@
+<?php 
+$json = array(
+		'item_Id' => '12341822',
+		'itemName'=> 'desk',
+		'price'=> 700000,
+		'freeShiping' => true,
+		'ratings'=>array(
+						'rater'=>array(
+									'Akmal'=>array(
+												'score' => 4),
+									'Andi'=>array(
+												'score' => 5))),
+		'color'=>array(
+					'brown', 'black' )
+	
+	);
 
-<?php
-$arr = array('a' => 1, 'b' => 2, 'c' => 3, 'd' => 4, 'e' => 5);
+echo json_encode($json, JSON_PRETTY_PRINT);
 
-echo json_encode($arr);
 ?>
